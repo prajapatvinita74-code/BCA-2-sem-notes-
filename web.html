@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Advance Notes - Vinita Prajapat</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1e1e2f;
+            color: #e0e0ff;
+        }
+        .navbar {
+            display: flex;
+            background-color: #29293d;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: #e0e0ff;
+            text-decoration: none;
+            margin-right: 20px;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #ff6b81;
+            color: #fff;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        h1 {
+            color: #ff6b81;
+            font-size: 3em;
+        }
+        h2 {
+            color: #a0e0ff;
+            margin-top: 25px;
+        }
+        p, ul, pre {
+            font-size: 1.1em;
+            line-height: 1.6em;
+        }
+        code {
+            background-color: #2a2a4d;
+            padding: 2px 4px;
+            border-radius: 4px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="cpp.html">C++</a>
+        <a href="os.html">OS</a>
+        <a href="c.html">C</a>
+        <a href="web.html">Web Advance</a>
+    </div>
+
+    <header>
+        <h1>Web Advance Notes</h1>
+        <p>Deep and detailed notes for HTML, CSS, and JavaScript</p>
+    </header>
+
+    <section>
+        <h2>1. HTML Basics</h2>
+        <ul>
+            <li>Introduction to HTML and its structure</li>
+            <li>Common tags: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;body&gt;</code>, <code>&lt;h1&gt;-&lt;h6&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;img&gt;</code></li>
+            <li>Attributes: href, src, alt, title, id, class</li>
+            <li>Lists: Ordered (<code>&lt;ol&gt;</code>) and Unordered (<code>&lt;ul&gt;</code>)</li>
+            <li>Tables: <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;td&gt;</code>, <code>&lt;th&gt;</code></li>
+            <li>Forms: <code>&lt;form&gt;</code>, input types, textarea, button, select, radio, checkbox</li>
+        </ul>
+
+        <h2>2. HTML Advanced</h2>
+        <ul>
+            <li>Semantic tags: <code>&lt;header&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;nav&gt;</code></li>
+            <li>Media tags: <code>&lt;audio&gt;</code>, <code>&lt;video&gt;</code>, <code>&lt;iframe&gt;</code></li>
+            <li>Meta tags and SEO basics</li>
+            <li>HTML5 APIs: Geolocation, Canvas, Drag & Drop, LocalStorage</li>
+        </ul>
+
+        <h2>3. CSS Basics</h2>
+        <ul>
+            <li>Introduction to CSS: Inline, Internal, External</li>
+            <li>Selectors: element, class, id, group, universal, descendant</li>
+            <li>Properties: color, background-color, font-family, font-size, text-align, text-decoration, margin, padding, border</li>
+            <li>Box Model concept</li>
+        </ul>
+
+        <h2>4. CSS Advanced</h2>
+        <ul>
+            <li>Flexbox: display:flex, justify-content, align-items, flex-wrap</li>
+            <li>Grid: display:grid, grid-template-columns, grid-gap</li>
+            <li>Positioning: static, relative, absolute, fixed, sticky</li>
+            <li>Transitions and Animations</li>
+            <li>Media Queries for Responsive Design</li>
+        </ul>
+
+        <h2>5. JavaScript Basics</h2>
+        <ul>
+            <li>Introduction and inclusion in HTML</li>
+            <li>Variables: var, let, const</li>
+            <li>Data types: Number, String, Boolean, Object, Array</li>
+            <li>Operators: Arithmetic, Comparison, Logical</li>
+            <li>Conditional statements: if, else if, else, switch</li>
+            <li>Loops: for, while, do-while</li>
+        </ul>
+
+        <h2>6. JavaScript Advanced</h2>
+        <ul>
+            <li>Functions: Declaration, Expression, Arrow Functions</li>
+            <li>DOM Manipulation: document.getElementById, querySelector, innerHTML</li>
+            <li>Events: onclick, onmouseover, onkeydown, addEventListener</li>
+            <li>Arrays: push, pop, shift, unshift, forEach, map, filter, reduce</li>
+            <li>Objects and Object Methods</li>
+            <li>Local Storage: setItem, getItem, removeItem</li>
+            <li>JSON: parse and stringify</li>
+        </ul>
+
+        <h2>7. Example: HTML + CSS + JS</h2>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+button {
+  padding: 10px 20px;
+  background-color: #ff6b81;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #ff3b5c;
+}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Click Counter Example&lt;/h2&gt;
+&lt;button onclick="incrementCounter()"&gt;Click me&lt;/button&gt;
+&lt;p&gt;You clicked &lt;span id="count"&gt;0&lt;/span&gt; times.&lt;/p&gt;
+
+&lt;script&gt;
+let counter = 0;
+function incrementCounter() {
+  counter++;
+  document.getElementById("count").innerHTML = counter;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+
+        <h2>8. Notes Summary</h2>
+        <p>This Web Advance notes include everything from HTML basics to advanced CSS and JavaScript concepts with examples. Practicing these will cover most syllabus topics for web development.</p>
+    </section>
+</body>
+</html>
